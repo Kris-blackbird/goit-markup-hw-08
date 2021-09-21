@@ -1,7 +1,11 @@
 .features {
-  padding-top: 94px;
-  padding-bottom: 94px;
-  outline-style: solid 2px green;
+  padding: 60px 0;
+  min-width: 320px;
+  /*outline-style: solid 2px green;*/
+
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
 .features__list {
@@ -47,4 +51,35 @@
   color: var(--secondary-text-color);
   margin-top: 0;
   margin-bottom: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .features__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+
+    .features__el {
+      width: calc((100% - 4 * 15px) / 2);
+      margin: 15px;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .features {
+    padding: 94px 0;
+
+    .features__list {
+      flex-wrap: nowrap;
+    }
+
+    .features__el {
+      width: 270px;
+
+      &:not(:last-child) {
+        margin-right: 30px;
+      }
+    }
+  }
 }
