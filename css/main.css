@@ -39,9 +39,27 @@ a {
 }
 
 .container {
-  width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 480px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
 }
 
 :root {
@@ -262,9 +280,13 @@ button:hover, button:focus {
 }
 
 .features {
-  padding-top: 94px;
-  padding-bottom: 94px;
-  outline-style: solid 2px green;
+  padding: 60px 0;
+  min-width: 320px;
+  /*outline-style: solid 2px green;*/
+}
+
+.features:not(:last-child) {
+  margin-bottom: 30px;
 }
 
 .features__list {
@@ -313,6 +335,33 @@ button:hover, button:focus {
   color: var(--secondary-text-color);
   margin-top: 0;
   margin-bottom: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .features__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+  .features__list .features__el {
+    width: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .features {
+    padding: 94px 0;
+  }
+  .features .features__list {
+    flex-wrap: nowrap;
+  }
+  .features .features__el {
+    width: 270px;
+  }
+  .features .features__el:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .work {
