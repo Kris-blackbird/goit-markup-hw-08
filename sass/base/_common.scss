@@ -1,7 +1,13 @@
 body {
-  background-color: #ffffff;
+  /*background-color: #ffffff;*/
   color: var(--primary-text-color);
   font-family: Roboto, sans-serif;
+}
+
+@media (min-width: 800px) {
+  body {
+    background-color: orange;
+  }
 }
 
 * {
