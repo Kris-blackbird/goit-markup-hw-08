@@ -264,6 +264,12 @@ button:hover, button:focus {
   padding: 60px 0;
 }
 
+@media screen and (min-width: 1200px) {
+  .features {
+    padding: 94px 0;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .features__list {
     display: flex;
@@ -278,6 +284,12 @@ button:hover, button:focus {
     width: calc((100% - 2 * 30px) / 2);
     margin-left: 30px;
     margin-top: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .features__el {
+    width: calc((100% - 2 * 60px) / 4);
   }
 }
 
@@ -316,43 +328,11 @@ button:hover, button:focus {
 .features__text {
   font-weight: normal;
   font-size: 14px;
-  line-height: 1.71em;
+  line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
 }
 
-/*
-
-@media screen and (min-width: 768px) {
-  .features__list {
-    display: flex;
-    flex-wrap: wrap;
-    margin: -15px;
-
-    .features__el {
-      width: calc((100% - 4 * 15px) / 2);
-      margin: 15px;
-    }
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .features {
-    padding: 94px 0;
-
-    .features__list {
-      flex-wrap: nowrap;
-    }
-
-    .features__el {
-      width: 270px;
-
-      &:not(:last-child) {
-        margin-right: 30px;
-      }
-    }
-  }
-} */
 .work {
   padding-bottom: 94px;
 }
