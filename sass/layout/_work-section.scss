@@ -21,11 +21,11 @@
   margin-bottom: 50px;
 }
 
-.work .work__el:not(:last-child) {
+.work__el:not(:last-child) {
   margin-right: 30px;
 }
 
-.work__el .work__text {
+.work__text {
   position: absolute;
   display: flex;
   font-weight: 700;
@@ -43,4 +43,10 @@
 
   color: var(--white-color);
   background: rgba(47, 48, 58, 0.8);
+}
+
+@media screen and (max-width: 1199px) {
+  .work {
+    display: none;
+  }
 }
