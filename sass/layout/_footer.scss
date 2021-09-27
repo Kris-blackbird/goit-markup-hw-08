@@ -1,15 +1,17 @@
 footer {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding: 60px 0;
   background-color: var(--bord-color);
 }
 
 .footer__adress-wrapper {
-  margin-right: 70px;
+  /* margin-right: 70px;*/
+  display: block;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .container-footer {
-  display: flex;
+  /*display: flex;*/
   align-items: center;
 }
 
@@ -20,10 +22,8 @@ footer {
   line-height: 1.2;
   color: var(--accent-color);
   display: inline-block;
-  margin-top: 0;
-  padding-top: auto;
+
   margin-bottom: 20px;
-  padding-right: auto;
 }
 
 .footer__logo-color {
@@ -31,8 +31,14 @@ footer {
   color: var(--white-color);
 }
 
-.adress__list {
+/*.adress__list {
   margin: 0px;
+}*/
+
+address {
+  display: block;
+
+  text-align: center;
 }
 
 .adress__link {
@@ -47,7 +53,7 @@ footer {
 }
 
 .adress__el:not(:last-child) {
-  margin: 0 0 9px;
+  margin-bottom: 8px;
 }
 
 .adress__contacts-link {
@@ -70,11 +76,13 @@ footer {
 }
 
 .footer-flex {
-  display: flex;
+  display: inline-block;
+  /*display: flex;*/
 }
 
 .footer__social-wrapper {
-  margin-right: 93px;
+  margin: 60px 0;
+  /*margin-right: 93px;*/
 
   & .team__social-list {
     display: flex;
@@ -90,6 +98,7 @@ footer {
   color: var(--white-color);
   margin-bottom: 20px;
   margin-top: auto;
+  text-align: center;
 }
 
 .footer__social-link {
@@ -128,16 +137,16 @@ footer {
   line-height: 1.143;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  margin-bottom: 20px;
+  text-align: center;
 
   color: var(--white-color);
 }
 
 .email-holder__text {
-  width: 358px;
+  min-width: 450px;
   height: 50px;
   padding: 15px 16px;
-  margin-right: 12px;
+  margin: 20px auto;
   font-weight: normal;
   font-size: 16px;
   line-height: 1.25;
@@ -147,6 +156,7 @@ footer {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background-color: transparent;
+  justify-content: center;
 
   color: var(--white-color);
   transition-duration: 250ms;
@@ -163,7 +173,23 @@ footer {
   fill: var(--white-color);
 }
 
+/*.email-holder {
+  .footer__btn {
+    justify-content: center;
+    align-items: center;
+  }
+}*/
+
+.for-footer-button {
+  justify-content: center;
+  align-items: center;
+}
+
 .footer__btn {
-  display: inline-flex;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  min-width: 200px;
+  justify-content: center;
   align-items: center;
 }
