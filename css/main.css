@@ -339,9 +339,11 @@ button:hover, button:focus {
 
 .work__list {
   display: flex;
+  justify-content: center;
 }
 
 .work__el {
+  justify-content: center;
   align-items: center;
   position: relative;
 }
@@ -387,7 +389,7 @@ button:hover, button:focus {
 .team {
   padding: 60px 0;
   margin: 0 auto;
-  border-color: var(--bg-color-team);
+  background-color: var(--bg-color-team);
 }
 
 @media screen and (min-width: 1200px) {
@@ -444,8 +446,11 @@ button:hover, button:focus {
 }
 
 .team__el:not(:last-child) {
-  margin-right: 30px;
   margin-bottom: 30px;
+}
+
+.team__list {
+  justify-content: center;
 }
 
 @media screen and (min-width: 768px) {
@@ -511,38 +516,55 @@ button:hover, button:focus {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.clients {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
 .clients__list {
   list-style: none;
   text-decoration: none;
+  justify-content: center;
   display: flex;
   flex-wrap: wrap;
   margin-top: -30px;
   margin-left: -30px;
 }
 
-.clients__list .clients__el {
-  display: flex;
-  flex-basis: calc((100% - 180px) / 6);
+@media screen and (min-width: 1200px) {
+  .clients__list {
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+}
+
+.clients {
+  padding: 60px 0;
+}
+
+.clients__el {
+  width: calc((100% - 4 * 15px) / 2);
   margin-top: 30px;
   margin-left: 30px;
 }
 
-.clients__el {
-  display: inline-block;
-  margin-left: 20px;
+.clients__title {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+  margin-bottom: 50px;
+}
+
+@media screen and (min-width: 1200px) {
+  .clients__title {
+    font-size: 36px;
+  }
 }
 
 .clients__link {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 170px;
-  height: 92px;
+  min-height: 90px;
+  min-width: 170px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
   transition-duration: 250ms;
@@ -565,14 +587,18 @@ button:hover, button:focus {
   fill: var(--accent-color);
 }
 
-.clients__title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16em;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--primary-text-color);
-  margin-bottom: 50px;
+@media screen and (min-width: 1200px) {
+  .clients {
+    padding: 94px 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .clients__el {
+    width: calc((100% - 6 * 15px) / 3);
+    margin-top: 30px;
+    margin-left: 30px;
+  }
 }
 
 footer {

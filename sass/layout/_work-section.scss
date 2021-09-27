@@ -4,9 +4,11 @@
 
 .work__list {
   display: flex;
+  justify-content: center;
 }
 
 .work__el {
+  justify-content: center;
   align-items: center;
   position: relative;
 }
