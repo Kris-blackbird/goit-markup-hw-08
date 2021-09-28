@@ -339,7 +339,7 @@ button:hover, button:focus {
 
 .work__list {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .work__el {
@@ -611,11 +611,13 @@ footer {
   display: block;
   margin: 0 auto;
   text-align: center;
+  justify-content: center;
 }
 
 .container-footer {
   /*display: flex;*/
   align-items: center;
+  justify-content: center;
 }
 
 .footer__logo {
@@ -672,18 +674,20 @@ address {
   color: var(--accent-color);
 }
 
-.footer-flex {
-  display: inline-block;
-  /*display: flex;*/
-}
-
 .footer__social-wrapper {
+  justify-content: center;
+  align-items: center;
   margin: 60px 0;
   /*margin-right: 93px;*/
 }
 
 .footer__social-wrapper .team__social-list {
   display: flex;
+}
+
+.footer-flex {
+  justify-content: center;
+  align-items: center;
 }
 
 .footer__social-title {
@@ -738,8 +742,8 @@ address {
 }
 
 .email-holder__text {
-  min-width: 450px;
-  height: 50px;
+  display: block;
+  width: 100%;
   padding: 15px 16px;
   margin: 20px auto;
   font-weight: normal;
@@ -752,6 +756,7 @@ address {
   border-radius: 4px;
   background-color: transparent;
   justify-content: center;
+  align-items: center;
   color: var(--white-color);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
