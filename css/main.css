@@ -614,10 +614,27 @@ footer {
   justify-content: center;
 }
 
+@media screen and (min-width: 768px) {
+  .footer__adress-wrapper {
+    margin: 0;
+  }
+}
+
 .container-footer {
   /*display: flex;*/
   align-items: center;
   justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+  .container-footer__tablet {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 76px;
+    padding-right: 89px;
+    margin-bottom: 60px;
+  }
 }
 
 .footer__logo {
@@ -679,6 +696,12 @@ address {
   align-items: center;
   margin: 60px 0;
   /*margin-right: 93px;*/
+}
+
+@media screen and (min-width: 768px) {
+  .footer__social-wrapper {
+    margin: 0;
+  }
 }
 
 .footer__social-wrapper .team__social-list {
@@ -762,6 +785,12 @@ address {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (min-width: 768px) {
+  .email-holder__text {
+    width: 450px;
+  }
+}
+
 .email-holder__text:focus {
   outline: none;
   border: 1px solid var(--accent-color);
@@ -772,12 +801,6 @@ address {
   fill: var(--white-color);
 }
 
-/*.email-holder {
-  .footer__btn {
-    justify-content: center;
-    align-items: center;
-  }
-}*/
 .for-footer-button {
   justify-content: center;
   align-items: center;
