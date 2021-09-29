@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <!-- Navigation section -->
+    <!-- Navigation section -
     <header class="header">
       <div class="container">
         <nav class="header-line">
@@ -38,7 +38,7 @@
           </ul>
         </nav>
 
-        <!-- Contacts section -->
+        <!-- Contacts section -
         <ul class="contacts list">
           <li class="contacts__item">
             <a href="mailto:info@devstudio.com" class="contacts__link">
@@ -60,16 +60,16 @@
       </div>
     </header>
 
-    <!-- Main conteiner 
+    <!-- Main conteiner -->
     <main>
-      <section class="hero">
+      <!--<section class="hero">
         <div class="container">
           <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
           <button class="hero__btn" type="button" data-modal-open>
             Заказать услугу
           </button>
         </div>
-      </section> -->
+      </section>-->
 
       <section class="features">
         <div class="container">
@@ -132,31 +132,73 @@
           <h2 class="work__title">Чем мы занимаемся</h2>
           <ul class="work__list list">
             <li class="work__el">
-              <h2 class="work__text">Десктопные приложения</h2>
-              <img
-                src="./images/создание_сайта1.jpg"
-                alt="создание сайта"
-                width="370"
-                height="294"
-              />
+              <div class="work__img">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/desktop/box.webp    1x,
+                      ./images/desktop/box@2x.webp 2x
+                    "
+                    media="(min-width:1200px)"
+                    type="image/web"
+                  />
+                  <source
+                    srcset="
+                      ./images/desktop/box1.jpg   1x,
+                      ./images/desktop/box@2x.jpg 2x
+                    "
+                    media="(min-width:1200px)"
+                  />
+                  <img src="#" alt="Написание кода" />
+                </picture>
+                <h2 class="work__text">Десктопные приложения</h2>
+              </div>
             </li>
             <li class="work__el">
-              <h2 class="work__text">Мобильные приложения</h2>
-              <img
-                src="./images/адаптация2.jpg"
-                alt="адаптация сайта"
-                width="370"
-                height="294"
-              />
+              <div class="work__img">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/desktop/box2.webp    1x,
+                      ./images/desktop/box2@2x.webp 2x
+                    "
+                    media="(min-width:1200px)"
+                    type="image/web"
+                  />
+                  <source
+                    srcset="
+                      ./images/desktop/box2.jpg    1x,
+                      ./images/desktop/box2@2x.jpg 2x
+                    "
+                    media="(min-width:1200px)"
+                  />
+                  <img src="#" alt="Aдаптация" />
+                </picture>
+                <h2 class="work__text">Мобильные приложения</h2>
+              </div>
             </li>
             <li class="work__el">
-              <h2 class="work__text">Дизайнерские решения</h2>
-              <img
-                src="./images/дизайн3.jpg"
-                alt="разработка дизайна"
-                width="370"
-                height="294"
-              />
+              <div class="work__img">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/desktop/box3.webp    1x,
+                      ./images/desktop/box3@2x.webp 2x
+                    "
+                    media="(min-width:1200px)"
+                    type="image/web"
+                  />
+                  <source
+                    srcset="
+                      ./images/desktop/box3.jpg    1x,
+                      ./images/desktop/box3@2x.jpg 2x
+                    "
+                    media="(min-width:1200px)"
+                  />
+                  <img src="#" alt="Цветовая палитра" />
+                </picture>
+                <h2 class="work__text">Дизайнерские решения</h2>
+              </div>
             </li>
           </ul>
         </div>
@@ -168,12 +210,54 @@
           <h2 class="team__title">Наша команда</h2>
           <ul class="team__list list">
             <li class="team__el">
-              <img
-                src="./images/Игорь.jpg"
-                alt="Игорь Демьяненко"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/img.webp    1x,
+                    ./images/desktop/img@2x.webp 2x
+                  "
+                  media="(min-width:1200px)"
+                  type="image/web"
+                />
+                <source
+                  srcset="
+                    ./images/desktop/img.jpg    1x,
+                    ./images/desktop/img@2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/img.webp    1x,
+                    ./images/tablet/img@2x.webp 2x
+                  "
+                  media="(min-width:768px)"
+                  type="image/web"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/img.jpg    1x,
+                    ./images/tablet/img@2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/img.webp    1x,
+                    ./images/mobile/img@2x.webp 2x
+                  "
+                  media="(min-width:280px)"
+                  type="image/web"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/img.jpg    1x,
+                    ./images/mobile/img@2x.jpg 2x
+                  "
+                  media="(min-width:280px)"
+                />
+                <img src="#" alt="Сотрудник Игорь" />
+              </picture>
               <div class="team__wrapper-container">
                 <h3 class="team__name">Игорь Демьяненко</h3>
                 <p class="team__profession">Product Designer</p>
@@ -223,12 +307,54 @@
             </li>
 
             <li class="team__el">
-              <img
-                src="./images/Ольга.jpg"
-                alt="Ольга Репина"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/img1.webp    1x,
+                    ./images/desktop/img1@2x.webp 2x
+                  "
+                  media="(min-width:1200px)"
+                  type="image/web"
+                />
+                <source
+                  srcset="
+                    ./images/desktop/img1.jpg    1x,
+                    ./images/desktop/img1@2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/img1.webp    1x,
+                    ./images/tablet/img1@2x.webp 2x
+                  "
+                  media="(min-width:768px)"
+                  type="image/web"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/img1.jpg    1x,
+                    ./images/tablet/img1@2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/img1.webp    1x,
+                    ./images/mobile/img1@2x.webp 2x
+                  "
+                  media="(min-width:280px)"
+                  type="image/web"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/img1.jpg    1x,
+                    ./images/mobile/img1@2x.jpg 2x
+                  "
+                  media="(min-width:280px)"
+                />
+                <img src="#" alt="Сотрудник Ольга" />
+              </picture>
               <div class="team__wrapper-container">
                 <h3 class="team__name">Ольга Репина</h3>
                 <p class="team__profession">Frontend Developer</p>
@@ -277,12 +403,54 @@
               </div>
             </li>
             <li class="team__el">
-              <img
-                src="./images/Николай.jpg"
-                alt="Николай Тарасов"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/img2.webp    1x,
+                    ./images/desktop/img2@2x.webp 2x
+                  "
+                  media="(min-width:1200px)"
+                  type="image/web"
+                />
+                <source
+                  srcset="
+                    ./images/desktop/img2.jpg    1x,
+                    ./images/desktop/img2@2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/img2.webp    1x,
+                    ./images/tablet/img2@2x.webp 2x
+                  "
+                  media="(min-width:768px)"
+                  type="image/web"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/img2.jpg    1x,
+                    ./images/tablet/img2@2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/img2.webp    1x,
+                    ./images/mobile/img2@2x.webp 2x
+                  "
+                  media="(min-width:280px)"
+                  type="image/web"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/img2.jpg    1x,
+                    ./images/mobile/img2@2x.jpg 2x
+                  "
+                  media="(min-width:280px)"
+                />
+                <img src="#" alt="Сотрудник Николай" />
+              </picture>
               <div class="team__wrapper-container">
                 <h3 class="team__name">Николай Тарасов</h3>
                 <p class="team__profession">Marketing</p>
@@ -331,12 +499,54 @@
               </div>
             </li>
             <li class="team__el">
-              <img
-                src="./images/Михаил.jpg"
-                alt="Михаил Ермаков"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/img3.webp    1x,
+                    ./images/desktop/img3@2x.webp 2x
+                  "
+                  media="(min-width:1200px)"
+                  type="image/web"
+                />
+                <source
+                  srcset="
+                    ./images/desktop/img3.jpg    1x,
+                    ./images/desktop/img3@2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/img3.webp    1x,
+                    ./images/tablet/img3@2x.webp 2x
+                  "
+                  media="(min-width:768px)"
+                  type="image/web"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/img3.jpg    1x,
+                    ./images/tablet/img3@2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/img3.webp    1x,
+                    ./images/mobile/img3@2x.webp 2x
+                  "
+                  media="(min-width:280px)"
+                  type="image/web"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/img3.jpg    1x,
+                    ./images/mobile/img3@2x.jpg 2x
+                  "
+                  media="(min-width:280px)"
+                />
+                <img src="#" alt="Сотрудник Михаил" />
+              </picture>
               <div class="team__wrapper-container">
                 <h3 class="team__name">Михаил Ермаков</h3>
                 <p class="team__profession">UI Designer</p>
