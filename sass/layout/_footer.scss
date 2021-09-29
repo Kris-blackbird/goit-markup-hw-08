@@ -7,6 +7,13 @@ footer {
   align-items: center;
   justify-content: center;
 
+  @media screen and (min-width: 1200px) {
+    margin: 0;
+    display: flex;
+    text-align: left;
+    justify-content: center;
+  }
+
   &__tablet {
     @media screen and (min-width: 768px) {
       display: flex;
@@ -123,15 +130,6 @@ address {
   }
 }
 
-.container-footer {
-  @media screen and (min-width: 1200px) {
-    margin: 0;
-    display: flex;
-    text-align: left;
-    justify-content: center;
-  }
-}
-
 /*.footer-flex {
   justify-content: center;
   align-items: center;
@@ -188,13 +186,12 @@ address {
 }
 
 .email-holder {
-  
-    @media screen and (min-width: 1200px) {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: baseline;
-    }
+  @media screen and (min-width: 1200px) {
+    /*display: flex;*/
+    flex-wrap: wrap;
+    justify-content: baseline;
   }
+}
 
 .email-holder__title {
   font-weight: bold;
@@ -207,8 +204,8 @@ address {
   color: var(--white-color);
 
   @media screen and (min-width: 1200px) {
+    display: block;
     text-align: left;
-    margin-bottom: 20px;
   }
 }
 
@@ -248,7 +245,9 @@ address {
   @media screen and (min-width: 1200px) {
     max-width: 358px;
     margin-right: 12px;
-    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   &:focus {
@@ -286,11 +285,19 @@ address {
   }
 }
 
-/*.footer__social-wrapper {
-  .email-holder {
-    @media screen and (min-width: 1200px) {
-      display: flex;
-      justify-content: baseline;
-    }
+.footer-flex {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
+
+// /*.footer__social-wrapper {
+//   .email-holder {
+//     @media screen and (min-width: 1200px) {
+//       display: flex;
+//       justify-content: baseline;
+//     }
+//   }
+// }

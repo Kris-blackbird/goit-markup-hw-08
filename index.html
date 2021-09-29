@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <!-- Navigation section -
+    <!-- Navigation section -->
     <header class="header">
       <div class="container">
         <nav class="header-line">
@@ -38,7 +38,7 @@
           </ul>
         </nav>
 
-        <!-- Contacts section -
+        <!-- Contacts section -->
         <ul class="contacts list">
           <li class="contacts__item">
             <a href="mailto:info@devstudio.com" class="contacts__link">
@@ -62,14 +62,14 @@
 
     <!-- Main conteiner -->
     <main>
-      <!--<section class="hero">
+      <section class="hero">
         <div class="container">
           <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
           <button class="hero__btn" type="button" data-modal-open>
             Заказать услугу
           </button>
         </div>
-      </section>-->
+      </section>
 
       <section class="features">
         <div class="container">
@@ -729,20 +729,22 @@
           <p class="email-holder__title">Подпишитесь на рассылку</p>
           <form class="footer-form">
             <label for="email"></label>
-            <input
-              class="email-holder__text"
-              type="email"
-              name="email"
-              id="email"
-              placeholder="E-mail"
-            />
+            <div class="footer-flex">
+              <input
+                class="email-holder__text"
+                type="email"
+                name="email"
+                id="email"
+                placeholder="E-mail"
+              />
+              <button type="submit" class="hero__btn footer__btn">
+                Подписаться
+                <svg class="icon-send" width="24" height="24">
+                  <use href="./images/icons.svg#icon-icon-send"></use>
+                </svg>
+              </button>
+            </div>
           </form>
-          <button type="submit" class="hero__btn footer__btn">
-            Подписаться
-            <svg class="icon-send" width="24" height="24">
-              <use href="./images/icons.svg#icon-icon-send"></use>
-            </svg>
-          </button>
         </div>
       </div>
     </footer>
