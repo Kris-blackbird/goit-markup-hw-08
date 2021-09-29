@@ -281,7 +281,29 @@ button:hover, button:focus {
 .site-nav__link.current {
   color: var(--accent-color);
   position: relative;
-  /*.site-nav__link.current {
+}
+
+@media screen and (min-width: 768px) {
+  .site-nav__link.current::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background-color: var(--accent-color);
+    border-radius: 2px;
+    bottom: -27px;
+    left: 0;
+  }
+}
+
+@media screen and (min-width: 768px) and (min-width: 1200px) {
+  .site-nav__link.current::after {
+    bottom: -38px;
+  }
+}
+
+/*.site-nav__link.current {
     position: relative;
     color: var(--accent-color);
 
@@ -296,36 +318,23 @@ button:hover, button:focus {
       border-radius: 2px;
     }
   }*/
-}
-
-@media screen and (min-width: 768px) {
-  .site-nav__link.current::after {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 4px;
-    background-color: var(--accent-color);
-    border-radius: 2px;
-    bottom: -34px;
-    left: 0;
-  }
-}
-
-.site-nav__link.current .contacts {
-  display: flex;
-  flex-direction: column;
-  padding: 14px 0;
-}
-
 @media screen and (min-width: 320px) and (max-width: 767px) {
-  .site-nav__link.current {
+  .contacts {
     display: none;
   }
 }
 
+@media screen and (min-width: 768px) {
+  .contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 14px 0;
+  }
+}
+
 @media screen and (min-width: 1200px) {
-  .site-nav__link.current {
+  .contacts {
     flex-direction: row;
     padding: 0;
     align-items: center;
@@ -335,6 +344,7 @@ button:hover, button:focus {
 .contacts__item {
   align-items: center;
   text-align: center;
+  justify-content: space-between;
 }
 
 .site-contacts__link {
@@ -344,12 +354,13 @@ button:hover, button:focus {
 @media screen and (min-width: 768px) {
   .contacts__item:not(:last-child) {
     margin-right: 30px;
+    margin-bottom: 10px;
   }
 }
 
 .contacts .contacts__link {
   font-weight: 500;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
@@ -361,6 +372,7 @@ button:hover, button:focus {
 
 @media screen and (min-width: 1200px) {
   .contacts .contacts__link {
+    font-size: 14px;
     padding: 32px 0;
   }
 }
