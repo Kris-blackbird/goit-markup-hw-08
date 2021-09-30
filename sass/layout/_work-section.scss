@@ -4,10 +4,11 @@
 
 .work__list {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .work__el {
+  display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
