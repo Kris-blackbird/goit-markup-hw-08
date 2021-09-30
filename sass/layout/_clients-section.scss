@@ -15,9 +15,18 @@
 
 .clients {
   padding: 60px 0;
+  @media screen and (min-width: 1200px) {
+    padding: 94px 0;
+  }
+}
 
-  &__el {
-    width: calc((100% - 4 * 15px) / 2);
+.clients__el {
+  width: calc((100% - 4 * 15px) / 2);
+  margin-top: 30px;
+  margin-left: 30px;
+
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 6 * 15px) / 3);
     margin-top: 30px;
     margin-left: 30px;
   }
@@ -30,9 +39,10 @@
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 
   @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
     font-size: 36px;
   }
 }
@@ -41,9 +51,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 7px 10px;
 
-  min-height: 90px;
-  min-width: 170px;
+  /*max-height: 92px;
+  max-width: 226px;*/
   border: 1px solid #afb1b8;
   border-radius: 4px;
 
@@ -65,19 +76,5 @@
   .clients__link:focus &,
   .clients__link:hover & {
     fill: var(--accent-color);
-  }
-}
-
-.clients {
-  @media screen and (min-width: 1200px) {
-    padding: 94px 0;
-  }
-
-  &__el {
-    @media screen and (min-width: 768px) {
-      width: calc((100% - 6 * 15px) / 3);
-      margin-top: 30px;
-      margin-left: 30px;
-    }
   }
 }
