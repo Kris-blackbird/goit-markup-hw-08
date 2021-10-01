@@ -15,6 +15,11 @@
   align-items: center;
   box-shadow: none;
 
+  /*@media screen and (min-width: 480px) and (max-width: 1199px) {
+    top: 22px;
+    right: 12px;
+  }*/
+
   &:focus,
   &:hover {
     fill: var(--accent-color);
@@ -174,21 +179,28 @@
 
 .policy-agree {
   font-weight: 400;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.71;
   letter-spacing: 0.03em;
 
   color: var(--secondary-text-color);
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+  }
 }
 
 .policy-agree__link {
   font-weight: 400;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   margin-left: 5px;
 
   color: var(--accent-color);
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+  }
 }
 
 .send-btn {
