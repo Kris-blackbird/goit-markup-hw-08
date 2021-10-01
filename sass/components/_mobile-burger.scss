@@ -1,5 +1,5 @@
 .mobile-burger {
-  /*z-index: 1;*/
+  z-index: 1;
   position: fixed;
   top: 0;
   left: 0;
@@ -7,8 +7,8 @@
   height: 100vh;
   background-color: var(--white-color);
   overflow: auto;
-  opacity: 0;
-  /*visibility: hidden;*/
+  /*opacity: 0;*/
+  visibility: visible;
   pointer-events: none;
 
   padding: 48px 25px;
@@ -107,8 +107,8 @@
     fill: var(--accent-color);
   }
 }
-@media screen and (min-width: 768px) {
+/*@media screen and (min-width: 768px) {
   .mobile-burger {
     display: none;
   }
-}
+}*/
