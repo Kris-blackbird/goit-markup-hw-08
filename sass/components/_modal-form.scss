@@ -14,11 +14,11 @@
   justify-content: center;
   align-items: center;
   box-shadow: none;
+}
 
-  &:focus,
-  &:hover {
-    fill: var(--accent-color);
-  }
+.close-button:focus,
+.close-button:hover {
+  fill: var(--accent-color);
 }
 
 .is-hidden {

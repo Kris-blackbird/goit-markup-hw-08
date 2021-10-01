@@ -1276,7 +1276,8 @@ address {
   box-shadow: none;
 }
 
-.close-button:focus, .close-button:hover {
+.close-button:focus,
+.close-button:hover {
   fill: var(--accent-color);
 }
 
